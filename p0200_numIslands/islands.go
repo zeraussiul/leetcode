@@ -18,6 +18,8 @@ func numIslands(grid [][]byte) int {
 	return islands
 }
 
+// dfs checks adjacent nodes ( N, S, W, E) to see if they are 'land' and will mark them visited,
+//it will do this recursively but may be done iterative with a stack, ( or bfs with a queue)
 func dfs(i, j int, grid [][]byte, visited [][]bool) {
 	// base case here
 	// if out of bounds, return
